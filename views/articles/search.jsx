@@ -10,14 +10,14 @@ function search () {
             <body>
                 <form method="POST" action="/query">
                     <div className="form-group">
-                        <label htmlFor="pub_date">Begin Date</label>
-                        <input type="date" id="pub_date" name="pub_date"  />
+                        <label htmlFor="begin_date">Begin Date</label>
+                        <input id="begin_date" name="begin_date"  />
                     </div>                  
-                    {/* <div className="form-group">
-                        <label htmlFor="end_date">End Date</label>
-                        <input type="date" id="end_date" name="end_date"  />
-                    </div>   
                     <div className="form-group">
+                        <label htmlFor="end_date">End Date</label>
+                        <input id="end_date" name="end_date"  />
+                    </div>   
+                    {/* <div className="form-group">
                         <label htmlFor="keyword">Keyword</label>
                         <input type="text" id="keyword" name="keyword"  />
                     </div>  */}

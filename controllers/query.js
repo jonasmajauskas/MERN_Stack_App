@@ -16,14 +16,15 @@ router.get('/', (req, res) => {
 router.post('/', async (req, res) => {
     articles.push(req.body)
     const API_URL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?"
-    const API_key = "&api-key=emmqGHUHZxKM4maAxcN8HXNt0KlP2KgV"
-    const pub_date = req.body.pub_date
-    const response = await fetch(API_URL + pub_date + API_key)
+    const API_key = "api-key=emmqGHUHZxKM4maAxcN8HXNt0KlP2KgV"
+    const begin_date = ("begin_date=" + req.body.begin_date + "&")
+    const end_date = ("end_date=" + req.body.end_date + "&")
+    const sort = ("sort=newest&")
+    const response = await fetch(API_URL + begin_date + end_date + sort + API_key)
     const resData = await response.json()
     res.send(resData)
 })
   
-
 // router.get('/query', (req, res) => {
 //     res.render('articles/index', { articles })
 // })
