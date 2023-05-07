@@ -6,7 +6,7 @@ function home () {
         <Def>
             <main>
                 <h1>Welcome to the NYU Article Database.</h1>
-                <a href="/articles">
+                <a href="/query">
                     <button className="btn-primary">Begin your search here.</button>
                 </a>
                 <br></br>

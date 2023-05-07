@@ -5,7 +5,8 @@ function Def (html) {
         <html>
             <head>
                 <title>NYT Article Database</title>
-                <link rel="stylesheet" href="styles.css" />
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossOrigin="anonymous" />
+                <link rel="stylesheet" href="styles.css" /> 
             </head>
             <body>
                 <nav>
@@ -14,7 +15,7 @@ function Def (html) {
                             <a href="/">Home</a>
                         </li>
                         <li>
-                            <a href="/articles">Search</a>
+                            <a href="/query">Search</a>
                         </li>
                         <li>
                             <a href="/favorites">Favorites</a>
