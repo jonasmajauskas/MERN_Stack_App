@@ -3,20 +3,24 @@ const articles = require('../../models/articles.js')
 const Def = require('../default.jsx')
 
 function index (data) {
-    console.log(data)
-    data = JSON.stringify
-    let articlesFormatted = data.map(article => {
-        return (
-            <div>{article}</div>
-        )
-    })
+    // const stringify = JSON.stringify(data)
+    // console.log(data)
+    function stringifyData(data) {
+        return JSON.stringify(data)
+    }
+
+    // let articlesFormatted = data.map((article) => {
+    //     return (
+    //         <div>{article}</div>
+    //     )
+    // })
     return (
       <Def>
             <main>
-                <h1>Your Results</h1>
+                <h1>Articles</h1>
             </main>
             <body>
-              {articlesFormatted}
+              {stringifyData}
           </body>
       </Def>
   )

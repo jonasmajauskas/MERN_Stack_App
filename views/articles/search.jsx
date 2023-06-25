@@ -10,6 +10,10 @@ function search () {
             <body>
                 <form method="POST" action="/query">
                     <div className="form-group">
+                        <label htmlFor="keyword">Keyword</label>
+                        <input id="keyword" name="keyword"  />
+                    </div>
+                    <div className="form-group">
                         <label htmlFor="begin_date">Begin Date</label>
                         <input id="begin_date" name="begin_date"  />
                     </div>                  

@@ -1,3 +1,5 @@
 module.exports = [{
-    name: 'H-Thai-ML',
+    status: '',
+    copyright: '',
+    response: ''
 }]
